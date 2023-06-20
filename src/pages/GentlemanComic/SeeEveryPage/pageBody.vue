@@ -8,14 +8,14 @@
         <em>></em>
         <a>漢化</a>
         <em>></em>
-        <a>本子名稱</a>
+        <a>{{ pageData.title }}</a>
         <em>></em>
         {{ pageData.name }}
       </div>
     </div>
     <div class="picturearea_cc">
       <div class="picturearea">
-        <img :src="pageData.path" />
+        <img :src="pageData.path" @click="nextpic(pNum)" />
       </div>
     </div>
     <div class="photo_info">
@@ -23,17 +23,20 @@
     </div>
     <div class="pagingarea_cc">
       <div class="pagingarea">
-        <span> <b>當前頁碼</b>/total </span>
+        <span>
+          <b>{{ pNum }}</b
+          >/{{ pagetotal }}
+        </span>
         <div class="control">
-          <button>上一頁</button>
+          <button @click="handleClick(pNum, up)">上一頁</button>
           <label>
             <select class="dropdown" @change="selectPage($event)">
               <option v-for="(item, index) in pageData.List">
-                第{{ index + 1 }}頁
+                第{{ item.fileId }}頁
               </option>
             </select>
           </label>
-          <button>下一頁</button>
+          <button @click="handleClick(pNum, down)" >下一頁</button>
         </div>
       </div>
     </div>
@@ -49,16 +52,22 @@ export default {
         name: null,
         path: null,
         List: [],
+        id: null,
+        title:'',
       },
+      pNum: 1,
+      TEST: 0,
     };
   },
   created() {
     this.pageData.name = JSON.parse(sessionStorage.getItem("fileName"));
     this.pageData.path = JSON.parse(sessionStorage.getItem("filePath"));
-    this.pageData.List = JSON.parse(sessionStorage.getItem("fileList"));
+    this.pageData.List = JSON.parse(sessionStorage.getItem("files"));
+    this.pageData.id = JSON.parse(sessionStorage.getItem("fileId"));
+    this.pageData.title = JSON.parse(sessionStorage.getItem("name"));
   },
   mounted() {
-    console.log(this.pageData.List);
+    this.countpNum();
   },
   methods: {
     selectPage(event) {
@@ -67,6 +76,61 @@ export default {
       // const num = parseInt(str)
       const num = event.target.value.replace(/[^0-9]/gi, "");
       this.pageData.path = this.pageData.List[num - 1].filePath;
+      this.pageData.name = this.pageData.List[num - 1].fileName;
+      this.pNum = Number(num);
+    },
+    countpNum() {
+      const val = this.pageData.name.replace(/[^0-9]/gi, "");
+      this.pNum = Number(val);
+    },
+    nextpic(value) {
+      console.log("首次拿到的值", value);
+      this.pNum = value + 1;
+      if (value >= this.pageData.List.length) {
+        this.pageData.path = this.pageData.List[0].filePath;
+        this.pageData.name = this.pageData.List[0].fileName;
+        this.pNum = 1;
+      } else {
+        this.pageData.path = this.pageData.List[this.pNum - 1].filePath;
+        this.pageData.name = this.pageData.List[this.pNum - 1].fileName;
+      }
+      console.log("處理後的值", this.pNum);
+    },
+    handleClick(value, judge) {
+    
+      if (judge === "up") {
+        this.pNum = value - 1;
+        if (this.pNum <= 0) {
+          this.pageData.path = this.pageData.List[this.pagetotal-1].filePath;
+          this.pageData.name = this.pageData.List[this.pagetotal-1].fileName;
+          this.pNum = this.pagetotal;
+        } else {
+          this.pageData.path = this.pageData.List[this.pNum - 1].filePath;
+          this.pageData.name = this.pageData.List[this.pNum - 1].fileName;
+        }
+      } else if (judge === "down") {
+        this.pNum = value + 1;
+        if (value >= this.pageData.List.length) {
+          this.pageData.path = this.pageData.List[0].filePath;
+          this.pageData.name = this.pageData.List[0].fileName;
+          this.pNum = 1;
+        } else {
+          this.pageData.path = this.pageData.List[this.pNum - 1].filePath;
+          this.pageData.name = this.pageData.List[this.pNum - 1].fileName;
+        }
+      }
+    },
+   
+  },
+  computed: {
+    pagetotal() {
+      return this.pageData.List.length;
+    },
+    up() {
+      return "up";
+    },
+    down() {
+      return "down";
     },
   },
 };

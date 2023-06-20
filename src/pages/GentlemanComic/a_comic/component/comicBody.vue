@@ -112,12 +112,12 @@ export default {
       }
     },
     zoomIn(info){
-      console.log(info)
       this.$router.push({path:'/SeeEveryPage'})
 
       sessionStorage.setItem("fileName", JSON.stringify(info.fileName));
       sessionStorage.setItem("filePath", JSON.stringify(info.filePath));
-      sessionStorage.setItem("fileList", JSON.stringify(this.book.files));
+      sessionStorage.setItem("fileId", JSON.stringify(info.fileId));
+      // sessionStorage.setItem("fileList", JSON.stringify(this.book.files));
     }
   },
   computed: {

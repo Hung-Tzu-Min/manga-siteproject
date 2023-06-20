@@ -170,11 +170,12 @@ export default {
       const files = this.DCbodyData[val].files;
       const imageFiles = files.keys();
 
-      imageFiles.forEach((file) => {
+      imageFiles.forEach((file,index) => {
         const filePath = files(file);
         const fileName = file.split("/").pop();
         const uploadtime = this.DCbodyData[val].uploadtime;
-        this.fileData.push({ filePath, fileName, uploadtime });
+        const fileId = index + 1;
+        this.fileData.push({ filePath, fileName, uploadtime,fileId});
       });
     },
   },

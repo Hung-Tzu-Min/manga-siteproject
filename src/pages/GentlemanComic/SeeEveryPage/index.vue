@@ -12,6 +12,11 @@ import SeeEveryPageBody from './pageBody.vue'
 export default {
 name:'SeeEveryPage',
 components:{GCheader,SeeEveryPageBody},
+methods:{
+  handleKeyup(){
+    console.log('觸發')
+  }
+}
 
 
 }
