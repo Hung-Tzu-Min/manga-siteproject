@@ -26,7 +26,6 @@
       <div class="imageDisplay" v-if="searchList == ''">
         <div class="gallery">
           <ul>
-          
             <li v-for="(item, index) in List">
               <div class="pic_box" @click="enterComic(item, index)">
                 <img :src="item.image" />
@@ -170,19 +169,18 @@ export default {
       const files = this.DCbodyData[val].files;
       const imageFiles = files.keys();
 
-      imageFiles.forEach((file,index) => {
+      imageFiles.forEach((file, index) => {
         const filePath = files(file);
         const fileName = file.split("/").pop();
         const uploadtime = this.DCbodyData[val].uploadtime;
         const fileId = index + 1;
-        this.fileData.push({ filePath, fileName, uploadtime,fileId});
+        this.fileData.push({ filePath, fileName, uploadtime, fileId });
       });
     },
   },
   mounted() {
     this.vuexdata = this.$store.state.mockData;
     this.setPage(0);
-    console.log("組件中", this.$store.state.mockData);
   },
   computed: {
     pageStart() {
@@ -219,10 +217,12 @@ export default {
     },
   },
   watch: {
+    '$store.state.mockData':function(nVal){
+      this.vuexdata = nVal
+      this.setPage(0)
+    },
     List: {
-      handler(newValue, oldValue) {
-       
-      },
+      handler(newValue, oldValue) {},
     },
   },
 };

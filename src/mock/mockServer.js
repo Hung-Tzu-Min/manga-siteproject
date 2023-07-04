@@ -17,7 +17,7 @@ Mock.mock('/api/data', (req, res) => {
             "files": `${require.context("@/assets/GCimages/Books/[セントラルフィールド (ぱいお)] 人妻恵理子の不貞記録｜人妻恵理子的不貞記録 [中国翻訳]",false,/\.(png|jpe?g|gif|svg)$/)}`,
             "name": "[セントラルフィールド (ぱいお)]人妻恵理子の不貞記録｜人妻恵理子的不貞記録 [中国翻訳]",
             "info": "2023-02-28, 60張照片",
-            "uploadtime": "2023-02-28",
+            "uploadtime": "2023-02-28", 
             "num": 44
         },
         {

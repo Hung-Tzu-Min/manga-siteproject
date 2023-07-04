@@ -4,6 +4,7 @@ import GentlemanComic from "@/pages/GentlemanComic/index.vue"
 import DoujinshiChiness from '@/pages/GentlemanComic/Doujinshi_Chiness/index.vue'
 import Acomic from '@/pages/GentlemanComic/a_comic/index.vue'
 import SeeEveryPage from '@/pages/GentlemanComic/SeeEveryPage/index.vue'
+import Detail from '@/components/detail/index.vue'
 
 export default (
     [
@@ -41,8 +42,13 @@ export default (
             meta: { show: true },
         },
         {
+            path: '/detail',
+            component: Detail,
+            meta: { show: true },
+        },
+        {
             path: "*",
-            redirect: "/home"
+            redirect: "/GentlemanComic"
         },
     ]
 )

@@ -30,8 +30,8 @@
         <div class="control">
           <button @click="handleClick(pNum, up)">上一頁</button>
           <label>
-            <select class="dropdown" @change="selectPage($event)">
-              <option v-for="(item, index) in pageData.List">
+            <select v-model="pNum" class="dropdown" @change="selectPage($event)">
+              <option v-for="(item, index) in pageData.List" :value="index+1">
                 第{{ item.fileId }}頁
               </option>
             </select>

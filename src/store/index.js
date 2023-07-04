@@ -39,6 +39,9 @@ const getters = {
             fileData.push({ filePath, fileName, uploadtime });
         });
         return fileData
+    },
+    getMockData(state) {   
+       return state.mockData
     }
 }
 export default new Vuex.Store({
