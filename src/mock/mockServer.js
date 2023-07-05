@@ -14,8 +14,8 @@ Mock.mock('/api/data', (req, res) => {
         {
             "id": 1,
             "image": `${require("@/assets/GCimages/BookCover/01.jpg")}`,
-            "files": `${require.context("@/assets/GCimages/Books/[セントラルフィールド (ぱいお)] 人妻恵理子の不貞記録｜人妻恵理子的不貞記録 [中国翻訳]",false,/\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[セントラルフィールド (ぱいお)]人妻恵理子の不貞記録｜人妻恵理子的不貞記録 [中国翻訳]",
+            "files": `${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][01]",false,/\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][01]",
             "info": "2023-02-28, 60張照片",
             "uploadtime": "2023-02-28", 
             "num": 44
@@ -23,8 +23,8 @@ Mock.mock('/api/data', (req, res) => {
         {
             "id": 2,
             "image": `${require("@/assets/GCimages/BookCover/02.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[山本善々] 隷属魔王 [DL版] [个人整合]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[山本善々] 隷属魔王 [DL版] [个人整合]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][02]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][02]",
             "info": "2023-02-29, 155張照片",
             "uploadtime":"2023-02-29",
             "num":210
@@ -32,8 +32,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 3,
             "image": `${require("@/assets/GCimages/BookCover/03.png")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[メメ屋 (メメ50)] 性癖マッチングアプリ ズボプリ [幸德秋良与以北汉化 鬼畜王汉化组] [230517去码] [無修正]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[メメ屋 (メメ50)] 性癖マッチングアプリ ズボプリ [幸德秋良与以北汉化 鬼畜王汉化组] [230517去码] [無修正]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][03]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][03]",
             "info": "2023-02-29, 45張照片",
             "uploadtime":"2023-02-29",
             "num":54
@@ -41,8 +41,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 4,
             "image": `${require("@/assets/GCimages/BookCover/04.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[TGA] 巨根留学生のNTRホームステイ [中国翻訳]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[TGA] 巨根留学生のNTRホームステイ[続] [中国翻訳]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][04]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][04]",
             "info": "2023-02-29, 310張照片",
             "uploadtime":"2023-03-01",
             "num":299
@@ -50,8 +50,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 5,
             "image": `${require("@/assets/GCimages/BookCover/05.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[フリテン堂] モブ男子の俺が100人孕ませるまで出ることのできない子作り島に引っ越した結果 [中国翻訳] [DL版]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[フリテン堂]モブ男子の俺が100人孕ませるまで出ることのできない子作り島に引っ越した結果 [中国翻訳] [DL版]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][05]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][05]",
             "info": "2023-02-29, 287張照片",
             "uploadtime":"2023-03-02",
             "num":105
@@ -59,8 +59,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 6,
             "image": `${require("@/assets/GCimages/BookCover/06.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[もじゃりん] ちょっとMでドスケベで + メロンブックス限定小冊子 キャラクタープロット集 [篆儀通文書坊漢化]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[もじゃりん] ちょっとMでドスケベで + メロンブックス限定小冊子キャラクタープロット集 [篆儀通文書坊漢化]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][06]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][06]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-03",
             "num":203
@@ -68,8 +68,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 7,
             "image": `${require("@/assets/GCimages/BookCover/07.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[母印堂 (シベリアン母スキー)] 僕の母さんで、僕の好きな人。7 [中国翻訳]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[母印堂 (シベリアン母スキー)] 僕の母さんで、僕の好きな人。7 [中国翻訳]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][07]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][07]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-04",
             "num":68
@@ -77,8 +77,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 8,
             "image": `${require("@/assets/GCimages/BookCover/08.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[絵援隊 (酒呑童子)] 18号 系列",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[絵援隊 (酒呑童子)] 18号 系列",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][08]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][08]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-05",
             "num":139
@@ -86,8 +86,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 9,
             "image": `${require("@/assets/GCimages/BookCover/09.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[しき] 巨乳巨尻ママを助けたければママの裸当ててみて [瓜皮汉化]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[しき] 巨乳巨尻ママを助けたければママの裸当ててみて [瓜皮汉化]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][09]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][09]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-05",
             "num":73
@@ -95,8 +95,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 10,
             "image": `${require("@/assets/GCimages/BookCover/10.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[OTOREKO (トイレ籠)] 無人島の吉村さん 1-7话+ 附加赠品",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[OTOREKO (トイレ籠)] 無人島の吉村さん 1-7话+ 附加赠品",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][10]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][10]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-06",
             "num":539
@@ -104,8 +104,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 11,
             "image": `${require("@/assets/GCimages/BookCover/11.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[伊達ろく] 妻と連れ子が同じ人（俺）を好きになるのは遺伝子的に当然！？1+2[甜族星人x我不看本子个人汉化]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[伊達ろく] 妻と連れ子が同じ人（俺）を好きになるのは遺伝子的に当然！？1+2[甜族星人x我不看本子个人汉化]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][11]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][11]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-07",
             "num":201
@@ -113,8 +113,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 12,
             "image": `${require("@/assets/GCimages/BookCover/12.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[みとれいゆ] 代理出産をお願いされ、娘の夫を寝取ってしまった淫母+代理出産でセックスの虜になったお義母さんの話【无所吊谓】",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[みとれいゆ] 代理出産をお願いされ、娘の夫を寝取ってしまった淫母+代理出産でセックスの虜になったお義母さんの話【无所吊谓】",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][12]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][12]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-07",
             "num":108
@@ -122,8 +122,8 @@ Mock.mock('/api/data', (req, res) => {
           {
             "id": 13,
             "image": `${require("@/assets/GCimages/BookCover/13.jpg")}`,
-            "files":`${require.context("@/assets/GCimages/Books/[うるうどき (おゆ)] 一途でいさせて [空気系☆漢化]",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[うるうどき (おゆ)] 一途でいさせて [空気系☆漢化]",
+            "files":`${require.context("@/assets/GCimages/Books/[Comic][ONE PIECE 航海王][尾田栄一郎][東立][13]",false, /\.(png|jpe?g|gif|svg)$/)}`,
+            "name": "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][13]",
             "info": "2023-02-29, 270張照片",
             "uploadtime":"2023-03-08",
             "num":71
@@ -1265,15 +1265,7 @@ Mock.mock('/api/data', (req, res) => {
             "uploadtime":"2023-03-08",
             "num":100
           },
-          {
-            "id": 140,
-            "image": `${require("@/assets/GCimages/Books/[背徳漢] モテアソビ ～常識改変学園～｜催眠性玩弄 ～扭轉常識學園～ [暮想出版] [無修正] [DL版]/001.jpg")}`,
-            "files":`${require.context("",false, /\.(png|jpe?g|gif|svg)$/)}`,
-            "name": "[背徳漢] モテアソビ ～常識改変学園～｜催眠性玩弄 ～扭轉常識學園～ [暮想出版] [無修正] [DL版]",
-            "info": "2023-05-31, 200張照片",
-            "uploadtime":"2023-06-07",
-            "num":191,
-          },
+        
     ]
   }
 })

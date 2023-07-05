@@ -32,7 +32,7 @@
         <!-- 左侧放大镜区域 -->
         <div class="previewWrap">
           <!--放大镜效果-->
-          <div class="preview">
+          <div @mousemove="magnifier()" class="preview">
             <div class="jqzoom">
               <img src="./images/s1.png" />
             </div>
@@ -380,6 +380,140 @@
 <script>
 export default {
   name: "detail",
+  data() {
+    return {
+      goodDate: {
+        path: [
+          {
+            title: "手机、数码、通讯",
+            url: "###",
+          },
+          {
+            title: "手机",
+            url: "###",
+          },
+          {
+            title: "Apple苹果",
+            url: "###",
+          },
+          {
+            title: "iphone 6S系类",
+          },
+        ],
+        imgsrc: [
+          { b: "./images/b1.png", s: "./images/s1.png" },
+          { b: "./images/b2.png", s: "./images/s2.png" },
+          { b: "./images/b3.png", s: "./images/s3.png" },
+          { b: "./images/b1.png", s: "./images/s1.png" },
+          { b: "./images/b2.png", s: "./images/s2.png" },
+          { b: "./images/b3.png", s: "./images/s3.png" },
+          { b: "./images/b1.png", s: "./images/s1.png" },
+          { b: "./images/b2.png", s: "./images/s2.png" },
+          { b: "./images/b3.png", s: "./images/s3.png" },
+          { b: "./images/b1.png", s: "./images/s1.png" },
+          { b: "./images/b2.png", s: "./images/s2.png" },
+          { b: "./images/b3.png", s: "./images/s3.png" },
+          { b: "./images/b1.png", s: "./images/s1.png" },
+          { b: "./images/b2.png", s: "./images/s2.png" },
+          { b: "./images/b3.png", s: "./images/s3.png" },
+        ],
+        goodsDetail: {
+          title: "Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机",
+          recommend:
+            "推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返",
+          price: 5299,
+          promoteSales: {
+            type: "加价购",
+            content:
+              "满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品",
+          },
+          support: "以旧换新，闲置手机回收 4G套餐超值抢 礼品购",
+          address: "广东省 深圳市 宝安区",
+          evaluateNum: 65545,
+          crumbData: [
+            {
+              title: "选择颜色",
+              data: [
+                {
+                  type: "金色",
+                  changePrice: 0,
+                },
+                {
+                  type: "银色",
+                  changePrice: 40,
+                },
+                {
+                  type: "黑色",
+                  changePrice: 90,
+                },
+              ],
+            },
+            {
+              title: "内存容量",
+              data: [
+                {
+                  type: "16G",
+                  changePrice: 0,
+                },
+                {
+                  type: "64G",
+                  changePrice: 300,
+                },
+                {
+                  type: "128G",
+                  changePrice: 900,
+                },
+                {
+                  type: "256G",
+                  changePrice: 1300,
+                },
+              ],
+            },
+            {
+              title: "选择版本",
+              data: [
+                {
+                  type: "公开版",
+                  changePrice: 0,
+                },
+                {
+                  type: "移动版",
+                  changePrice: -1000,
+                },
+              ],
+            },
+            {
+              title: "购买方式",
+              data: [
+                {
+                  type: "官方标配",
+                  changePrice: 0,
+                },
+                {
+                  type: "优惠移动版",
+                  changePrice: -240,
+                },
+                {
+                  type: "电信优惠版",
+                  changePrice: -390,
+                },
+              ],
+            },
+          ],
+        },
+      },
+
+    };
+  },
+  mounted(){
+    this.magnifier()
+  },
+  methods:{
+    magnifier(){
+        let imgsrc = this.goodDate.imgsrc
+      
+    },
+  }
 };
 </script>
 
@@ -416,7 +550,7 @@ export default {
 .con .conPoin {
   padding: 9px 15px 9px 0;
 }
-.con .conPoin > a+a::before {
+.con .conPoin > a + a::before {
   content: "\00AC\00a0";
   padding: 0 5px;
   color: #be2525;
@@ -433,7 +567,7 @@ export default {
 .con .mainCon .previewWrap .preview {
   width: 400px;
   height: 400px;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
 }
 .con .mainCon .previewWrap .preview .jqzoom {
   cursor: pointer; /*改變滑鼠游標滑過時的樣式*/
@@ -462,5 +596,226 @@ export default {
   overflow: hidden;
   z-index: 20;
   border: 1px solid #ddd;
+}
+.con .mainCon .previewWrap .preview .maxbox img {
+  width: 800px;
+  height: 800px;
+  display: block;
+}
+.con .mainCon .previewWrap .specScroll {
+  margin-top: 5px;
+  width: 400px;
+  overflow: hidden;
+}
+.con .mainCon .previewWrap .specScroll .prev,
+.con .mainCon .previewWrap .specScroll .next {
+  text-align: center;
+  width: 10px;
+  height: 54px;
+  line-height: 54px;
+  border: 1px solid #ccc;
+  background: #ebebeb;
+  cursor: pointer;
+}
+.con .mainCon .previewWrap .specScroll .prev {
+  float: left;
+  margin-right: 4px;
+}
+.con .mainCon .previewWrap .specScroll .next {
+  float: right;
+}
+.con .mainCon .previewWrap .specScroll .items {
+  float: left;
+  position: relative;
+  width: 372px;
+  height: 56px;
+  overflow: hidden;
+}
+.con .mainCon .previewWrap .specScroll .items .itemsCon {
+  position: absolute;
+  width: 9999px;
+  height: 56px;
+  left: 0;
+}
+.con .mainCon .previewWrap .specScroll .items .itemsCon img {
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.con .mainCon .InfoWrap {
+  width: 700px;
+  float: right;
+}
+.con .mainCon .InfoWrap .InfoName {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+.con .mainCon .InfoWrap .news {
+  color: #e12228;
+  margin-top: 15px;
+}
+.con .mainCon .InfoWrap .priceArea {
+  background: #fee9eb;
+  padding: 7px;
+  margin: 13px 0;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 {
+  overflow: hidden;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .title {
+  float: left;
+  margin-right: 15px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .price {
+  float: left;
+  color: #c81623;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .price i {
+  font-size: 16px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .price em {
+  font-size: 24px;
+  font-weight: 700;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .price span {
+  font-size: 12px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea1 .remark {
+  float: right;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea2 {
+  overflow: hidden;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea2 .title {
+  margin-right: 15px;
+  float: left;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea2 .fixWidth {
+  width: 520px;
+  float: left;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea2 .fixWidth .red-bg {
+  background: #c81623;
+  color: #fff;
+  padding: 3px;
+}
+.con .mainCon .InfoWrap .priceArea .priceArea2 .fixWidth .t-gray {
+  color: #999;
+}
+.con .mainCon .InfoWrap .support {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.con .mainCon .InfoWrap .support .supportArea {
+  overflow: hidden;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.con .mainCon .InfoWrap .support .supportArea .title {
+  margin-right: 15px;
+  float: left;
+}
+.con .mainCon .InfoWrap .support .supportArea .fixWidth {
+  width: 520px;
+  float: left;
+  color: #999;
+}
+.con .mainCon .InfoWrap .choose .chooseArea {
+  overflow: hidden;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.con .mainCon .InfoWrap .choose .chooseArea .choosed mark {
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  background-color: snow;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+.con .mainCon .InfoWrap .choose .chooseArea .choosed mark a {
+  font-size: 12px;
+  color: red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.con .mainCon .InfoWrap .choose .chooseArea dl {
+  overflow: hidden;
+  margin: 13px 0;
+}
+.con .mainCon .InfoWrap .choose .chooseArea dl dt {
+  margin-right: 15px;
+  float: left;
+}
+.con .mainCon .InfoWrap .choose .chooseArea dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-left: 1px solid #eee;
+}
+.con .mainCon .InfoWrap .choose .chooseArea dl dd:nth-of-type(1) {
+  color: red;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .controls {
+  width: 48px;
+  position: relative;
+  float: left;
+  margin-right: 15px;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .controls .itxt {
+  width: 38px;
+  height: 37px;
+  border: 1px solid #ddd;
+  color: #555;
+  float: left;
+  border-right: 0;
+  text-align: center; /*也可控制input中，文字擺放的位置*/
+}
+.con .mainCon .InfoWrap .choose .cartWrap .controls .plus,
+.con .mainCon .InfoWrap .choose .cartWrap .controls .mins {
+  width: 15px;
+  text-align: center;
+  height: 17px;
+  line-height: 17px;
+  background: #f1f1f1;
+  color: #666;
+  position: absolute;
+  right: -8px;
+  border: 1px solid #ccc;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .controls .mins {
+  right: -8px;
+  top: 19px;
+  border-top: 0;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .controls .plus {
+  right: -8px;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .add {
+  float: left;
+}
+.con .mainCon .InfoWrap .choose .cartWrap .add a {
+  background-color: #e1251b;
+  padding: 0 25px;
+  font-size: 16px;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  display: block;
 }
 </style>
