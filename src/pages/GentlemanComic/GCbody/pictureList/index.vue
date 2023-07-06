@@ -101,32 +101,32 @@ export default {
       GCbodyList: [
         {
           image: require('@/assets/GCimages/BookCover/01.jpg'),
-          name: "[セントラルフィールド (ぱいお)]人妻恵理子の不貞記録｜人妻恵理子的不貞記録 [中国翻訳]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][01]",
           info:'2023-02-28, 60張照片',
         },
         {
           image: require('@/assets/GCimages/BookCover/02.jpg'),
-          name: "[山本善々] 隷属魔王 [DL版] [个人整合]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][02]",
           info:'2023-02-29, 155張照片',
         },
         {
           image: require('@/assets/GCimages/BookCover/03.png'),
-          name: "[メメ屋 (メメ50)] 性癖マッチングアプリ ズボプリ[幸德秋良与以北汉化 鬼畜王汉化组][無修正]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][03]",
           info:'2023-02-29, 45張照片',
         },
         {
           image: require('@/assets/GCimages/BookCover/04.jpg'),
-          name: "[TGA] 巨根留学生のNTRホームステイ[続] [中国翻訳]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][04]",
           info:'2023-02-29, 310張照片',
         },
         {
           image: require('@/assets/GCimages/BookCover/05.jpg'),
-          name: "[フリテン堂]モブ男子の俺が100人孕ませるまで出ることのできない子作り島に引っ越した結果 [中国翻訳] [DL版]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][05]",
           info:'2023-02-29, 287張照片',
         },
         {
           image: require('@/assets/GCimages/BookCover/06.jpg'),
-          name: "[もじゃりん] ちょっとMでドスケベで + メロンブックス限定小冊子キャラクタープロット集 [篆儀通文書坊漢化]",
+          name: "[Comic][ONE PIECE 航海王][尾田栄一郎][東立][06]",
           info:'2023-02-29, 270張照片',
         },
       ],
